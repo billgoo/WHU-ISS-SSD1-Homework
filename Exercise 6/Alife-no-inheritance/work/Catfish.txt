@@ -1,0 +1,51 @@
+English Specification for Catfish class:
+Attributes and behaviors similar to those for AlgaeColony  
+Constant class attributes:  
+    ALIVE: Private attribute.Represents status of Catfish that is alive as a String.   
+    DEAD: Private attribute.Represents status of Catfish that is dead as a String.   
+    SPECIES: Private attribute.Represents species of lifeform as a String.   
+    BABY_MAX_ENERGY: Private attribute. Represents maximum energy that can be carried as an integer.   
+    BABY_MIN_ENERGY: Private attribute.Represents minimum energy needed to stay alive as an integer.   
+Constant instance attributes:  
+    name: Private attributeRepresents unique name as a String   
+Instance attributes:     
+    row: Private attribute.Represents row identifying the location as an integer.   
+    column: Private attribute.Represents column identifying the location as an integer.   
+    deadOrAlive: Private attribute.Represents living status as a String.   
+    energy: Private attribute.Represents current energy level as a String.   
+    age: Private attribute.Represents age as an integer.   
+    simulation: Private attribute.Represents simulation to which the Catfish belongs as an object of Simulation class.  
+    minEnergy: Private attribute.Represents minimum energy needed to survive as an integer.  
+    maxEnergy: Private attribute.Represents maximum energy that can be carried as an integer.  
+Class attributes:   
+    nCatfishCreated: Private attribute.Represents number of Catfish created so far as an integer, to help the Simulation         object keep track of the total number of Catfish in the simulation.  
+Behaviors:   
+    Constructor: Create an instance of the Catfish class.   
+    liveALittle: Live a block of time.Part of the public interface.  
+    die: Update living status to being dead.Returns nothing.Part of the private interface.  
+    getRow: Return the row in which Catfish is located as an integer.Part of the public interface.  
+    getColumn: Return the column in which Catfish is located as an integer.Part of the public interface.  
+    getAge: Return the age of Catfish as an integer.Part of the public interface.  
+    getName: Return the unique name identifying the Catfish as a String.Part of the public interface.  
+    getImage: Return an image representing the Catfish.Part of the public interface.  
+    getMinEnergy: Return the minimum energy needed to stay alive as an integer.Part of the private interface.  
+    getMaxEnergy: Return the maximum energy that can be carried as an integer.Part of the private interface.  
+    getEnergy: Return the current energy level as an integer.Part of the public interface.  
+    isDead: Return the living status of the Catfish as a boolean.Part of the public interface.  
+    getDisplayMechanism: Return the mechanism used for displaying the Catfish as a String.Part of the public interface.  
+    getSpecies: Return the species of the Catfish as a String.Part of the public interface.  
+    getColor: Return the color of the Catfish as a String.Part of the public interface.  
+    setEnergy: Set the energy level as specified by the integer value passed as a parameter.Part of the private interface.  
+Attributes and behaviors specific to Catfish    
+Instance attribute: 
+    direction: This private attribute represents the direction in which the Catfish is facing as a String.  
+Constant class attributes:
+    RIGHT: Private attribute.Represents the direction of Catfish facing right as a String.   
+    LEFT: Private attribute.Represents the direction of Catfish facing left as a String.  
+    UP: Private attribute.Represents the direction of Catfish facing up as a String.  
+    DOWN: Private attribute.Represents the direction of Catfish facing down as a String.   
+Behaviors:
+    moveToRow: Move the Catfish to the row specified by the integer value passed as a parameter.Returns the row where the Catfish is moved as an integer.Part of the private interface.moveToColumn: Move the Catfish to the column specified by the integer value passed as a parameter.Returns the column where the Catfish is moved as an integer.Part of the private interface.isHungry: Check if the current energy level of the Catfish is less than twice the amount needed for survival.Returns a boolean.Part of the private interface.  
+    getDirection: Check the direction in which the Catfish is facing.Returns a String.Part of the private interface.  
+    lookForFoodInNeighborhood: Try to locate any AlgaeColony close by. Relinquish some energy in the process.Note that this behavior requires a way to store the neighboring AlgaeColony objects. Your knowledge of Vectors from 2.2.3 Lifecycle of Objects can help you here.Part of the private interface.  
+                  

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ShippingLabelForm</title>
+</head>
+<body bgcolor="yellow">
+<h1 align='center'>Shipping Label</h1>
+<form action='/servlet/Label' method='post'>
+    <b>Sender:</b><br>
+    Sender Name:<br>
+    <input type='text' size='26' name='SenderName' value=''><br>
+    Sender Street Address:<br>
+    <input type='text' size='26' name='SenderStrtAddr ' value=''><br>
+    Sender City/Zip:<br>
+    <input type='text' size='26' name='SenderCityZip' value=''><br>
+    <hr>
+    <b>Receiver:</b><br>
+    Receiver Name:<br>
+    <input type='text' size='26' name='ReceiverName' value=''><br>
+    Receiver Street Address:<br>
+    <input type='text' size='26' name='ReceiverStrtAddr' value=''><br>
+    Receiver City/Zip:<br>
+    <input type='text' size='26' name='ReceiverCityZip' value=''><br>
+    <hr>
+    <b>Shipping Category:</b><br>
+    <input type='radio' name='destination' value='Domestic-stamp.jpg'>Domestic<br>
+    <input type='radio' name='destination' value='International-stamp.jpg'>International<br>
+    <center>
+        <input type='submit' name='UserRequest' value='Display Label'>
+    </center>
+</form>
+
+</body>
+</html>
