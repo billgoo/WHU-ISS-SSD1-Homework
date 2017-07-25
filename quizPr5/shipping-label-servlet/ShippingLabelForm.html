@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<HTML>
+<HEAD>
+	<TITLE>ShippingLabelForm</TITLE>
+</HEAD>
+
+<BODY bgcolor='#fdf5e6'>
+
+<H1 align='center'>Shipping Label</H1>
+
+<!-- Servlet to process the form -->
+<FORM action='/servlet/Label' method='post'>
+
+<!-- Sender information : text fields -->
+<B>Sender:</B><BR>
+Sender Name:
+<INPUT type='text' size='20' name='SenderName' value=''><BR>
+Sender Street Address: 
+  <INPUT type='text' size='20' name='SenderStrtAddr' value=''><BR>  
+Sender City/Zip:
+<INPUT type='text' size='20' name='SenderCityZip' value=''><BR>
+<HR>
+
+<!-- Receiver information : text fields -->
+<B>Receiver:</B><BR>
+Receiver Name:
+<INPUT type='text' size='20' name='ReceiverName' value=''><BR>
+Receiver Street Address:
+<INPUT type='text' size='20' name='ReceiverStrtAddr' value=''><BR>
+Receiver City/Zip:
+<INPUT type='text' size='20' name='ReceiverCityZip' value=''><BR>
+<HR> 
+
+<!--  Postage category : radio button -->
+<B>Shipping Category:</B><BR>
+<INPUT type='radio' name='destination' value='Domestic-stamp.jpg'>Domestic<BR>
+<INPUT type='radio' name='destination' value='International-stamp.jpg'>International<BR>
+
+<!--  Submit button -->
+<CENTER>
+	<INPUT type='submit' name='UserRequest' value='Display Label'>
+</CENTER>
+</FORM>
+
+</BODY>
+</HTML>
